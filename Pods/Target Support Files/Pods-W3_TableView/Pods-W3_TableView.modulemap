@@ -1,0 +1,6 @@
+framework module Pods_W3_TableView {
+  umbrella header "Pods-W3_TableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
