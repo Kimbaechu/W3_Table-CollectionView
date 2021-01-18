@@ -25,6 +25,7 @@
 		25662D9D25AF0AA4003432EC /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25662D9C25AF0AA4003432EC /* ColorTableViewCell.swift */; };
 		25662DA725AF2D58003432EC /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25662DA625AF2D58003432EC /* EditViewController.swift */; };
 		25662DAA25AF2FF5003432EC /* EditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25662DA925AF2FF5003432EC /* EditTableViewCell.swift */; };
+		257911A925B50AB9002A0639 /* AlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257911A825B50AB9002A0639 /* AlignedCollectionViewFlowLayout.swift */; };
 		25D2A69D25AE60EA00308F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2A69C25AE60EA00308F26 /* AppDelegate.swift */; };
 		25D2A69F25AE60EA00308F26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2A69E25AE60EA00308F26 /* SceneDelegate.swift */; };
 		25D2A6A125AE60EA00308F26 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2A6A025AE60EA00308F26 /* MainViewController.swift */; };
@@ -53,6 +54,7 @@
 		25662D9C25AF0AA4003432EC /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
 		25662DA625AF2D58003432EC /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		25662DA925AF2FF5003432EC /* EditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableViewCell.swift; sourceTree = "<group>"; };
+		257911A825B50AB9002A0639 /* AlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		25D2A69925AE60EA00308F26 /* W3_TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = W3_TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D2A69C25AE60EA00308F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25D2A69E25AE60EA00308F26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		251D3E7925B0724C006F1D39 /* SeriesOn */ = {
 			isa = PBXGroup;
 			children = (
+				257911A725B50AAB002A0639 /* Layouts */,
 				251D3E7E25B072DC006F1D39 /* Cell */,
 				251D3E7A25B0729D006F1D39 /* SeriesOnViewController.swift */,
 			);
@@ -208,6 +211,14 @@
 				25662DA925AF2FF5003432EC /* EditTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		257911A725B50AAB002A0639 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				257911A825B50AB9002A0639 /* AlignedCollectionViewFlowLayout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 		25D2A69025AE60EA00308F26 = {
@@ -386,6 +397,7 @@
 				251D3E5725AFD70C006F1D39 /* CollectionViewCell.swift in Sources */,
 				25662D8C25AE881E003432EC /* Log.swift in Sources */,
 				25662DA725AF2D58003432EC /* EditViewController.swift in Sources */,
+				257911A925B50AB9002A0639 /* AlignedCollectionViewFlowLayout.swift in Sources */,
 				25662D8225AE7BBD003432EC /* Color.swift in Sources */,
 				251D3E7125B0295A006F1D39 /* ReorderingCollectionViewCell.swift in Sources */,
 			);

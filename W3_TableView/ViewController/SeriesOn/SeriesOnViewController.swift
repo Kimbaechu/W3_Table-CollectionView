@@ -12,16 +12,10 @@ import Then
 class SeriesOnViewController: UIViewController {
     
     var photos = Photo.allPhotos()
-    var colorData0 = createRandomColorData(items: 20)
+    var colorData0 = createRandomColorData(items: 10)
     
-    private var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout()).then {
-        let flowLayout = UICollectionViewFlowLayout().then {
-            $0.scrollDirection = .horizontal
-            $0.minimumLineSpacing = 0
-            $0.minimumInteritemSpacing = 0
-        }
-        
-        $0.collectionViewLayout = flowLayout
+    private var collectionView = UICollectionView(frame: .zero, collectionViewLayout: AlignedCollectionViewFlowLayout()).then {
+
         $0.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         $0.backgroundColor = .darkGray
         $0.register(SeriesOnCollectionViewCell.self, forCellWithReuseIdentifier: SeriesOnCollectionViewCell.identifier)
@@ -38,15 +32,15 @@ class SeriesOnViewController: UIViewController {
         self.navigationItem.title = "SeriesOn"
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints {
-            $0.top.left.right.equalTo(view)
-            $0.height.equalTo(300)
+            $0.top.left.right.equalTo(view.safeAreaLayoutGuide)
+            $0.height.equalTo(150)
         }
     }
 }
 
 extension SeriesOnViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count
+        return colorData0.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -67,8 +61,8 @@ extension SeriesOnViewController: UICollectionViewDelegateFlowLayout {
 
         
 //        let height = 200
-        let height = 200 - (space * CGFloat(indexPath.row))
+        let height = 150 - (space * CGFloat(indexPath.row))
         
-        return CGSize(width: height * (1 / 3), height: height)
+        return CGSize(width: 100, height: height)
     }
 }

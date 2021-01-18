@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let nav5 = UINavigationController(rootViewController: vc5)
         let tab = UITabBarController()
         tab.viewControllers = [nav1, nav2, nav3, nav4, nav5]
-        tab.selectedIndex = 0
+        tab.selectedIndex = 4
         
         nav1.tabBarItem.title = "T/C"
         nav1.tabBarItem.image = UIImage(systemName: "house")
