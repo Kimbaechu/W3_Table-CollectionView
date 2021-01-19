@@ -53,7 +53,7 @@ extension ReoderingViewController: UICollectionViewDataSource, UICollectionViewD
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReorderingCollectionViewCell.identifier, for: indexPath) as! ReorderingCollectionViewCell
         
         cell.photo = photos[indexPath.item]
-        cell.indexLabel.text = "\(indexPath.item)"
+//        cell.indexLabel.text = "\(indexPath.item)"
         print("\(indexPath.row) reuse")
         return cell
     }

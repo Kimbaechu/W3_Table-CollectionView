@@ -41,6 +41,20 @@ class SeriesOnCollectionViewCell: UICollectionViewCell {
             $0.edges.equalTo(contentView)
         }
     }
+    
+    func transformToLarge() {
+        UIView.animate(withDuration: 0.2) {
+            self.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        }
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+    }
+    
+    func transformToStandard() {
+        UIView.animate(withDuration: 0.2) {
+            self.transform = CGAffineTransform.identity
+        }
+    }
 }
 
 
